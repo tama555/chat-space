@@ -28,7 +28,6 @@
 .Top-items {
   height: 20px;
   width: 260px;
-  // background-color: #d8d8d8;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -37,7 +36,6 @@
   }
   &__icons {
     width: 60px;
-    // background-color: blue;
     display: flex;
     justify-content: flex-end;
     &--edit {
