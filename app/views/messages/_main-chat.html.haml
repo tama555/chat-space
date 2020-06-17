@@ -1,0 +1,42 @@
+.Main-chat
+  .Main-chat__group--info
+    .header-list
+      .header-list__left
+        .header-list__left--group
+          test
+        .header-list__left--member
+          Member:masa
+      .header-list__right
+        = link_to "#" do
+          Edit
+    
+  .Main-chat__message--list
+    .message
+      .message__box
+        .messege__box--name
+          masa
+        .message__box--data
+          2020/06/15(Mon)15:12:05
+      .message__text
+        おはよう！
+    
+    .message
+      .message__box
+        .messege__box--name
+          taro
+        .message__box--data
+          2020/06/15(Mon)15:34:32
+      .message__text
+        こんにちは！
+
+
+  .fotter
+    .chat-box
+      .chat-box__main
+        %input.chat-box__main--text{placeholder: "type a message", type: "text"}/
+      .chat-box__label
+        %label.chat-box__lavel--image
+          = icon('fas', 'image')
+          %input#filesend{type: "file"}
+    .send-box
+      Send
