@@ -22,6 +22,20 @@
   &__group--list {
     height: calc( 100vh - 100px);
     background-color: #2f3e51;
+    .group-lists {
+      a {
+        text-decoration: none;
+      }
+      .group-list__name {
+        color: white;
+        text-decoration:none;
+        
+      }
+      .group-list__message {
+        color: white;
+        text-decoration:none;
+      }
+    }
   }
 }
 

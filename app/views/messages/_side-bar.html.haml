@@ -5,7 +5,7 @@
         =current_user.name
       .Top-items__icons
         .Top-items__icons--edit
-          = link_to "#" do
+          = link_to new_group_path do
             = icon('far', 'edit')
         .Top-items__icons--cog
           = link_to edit_user_path(current_user) do
@@ -13,19 +13,9 @@
 
   .Side-bar__group--list
     .group-lists
-      .group-list
-        .group-list__name
-          techcamp
-        .group-list__message
-          まだメッセージがありません
-      .group-list
-        .group-list__name
-          野鳥の会
-        .group-list__message
-          まだメッセージがありません
-      .group-list
-        .group-list__name
-          ツーリング
-        .group-list__message
-          まだメッセージがありません
-  
+      - current_user.groups.each do |group|
+        = link_to '#' do
+          .group-list__name
+            = group.name
+          .group-list__message
+            メッセージはまだありません
