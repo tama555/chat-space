@@ -14,8 +14,8 @@
   .Side-bar__group--list
     .group-lists
       - current_user.groups.each do |group|
-        = link_to '#' do
+        = link_to group_messages_path(group) do
           .group-list__name
             = group.name
           .group-list__message
-            メッセージはまだありません
+            = group.show_last_message
